@@ -1,16 +1,19 @@
 /* Reset global */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
 @font-face {
     font-family: 'Lovely';
     src: url(../fonte/Lovely\ Weekend.ttf);
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     background-color: rgb(255, 219, 255);
+    position: relative;
 }
 
 /* Cabeçalho */
@@ -117,10 +120,8 @@ footer {
     width: 100%;
     padding: 8px;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    
-    
+    position: fixed; /* Alterado para posição fixa */
+    bottom: 0; /* Alinhado ao final da página */
 }
 
 /* Tarefas em andamento */
@@ -129,6 +130,7 @@ footer {
     padding-top: 16px;
     margin: 0 auto;
     max-width: 520px;
+    margin-bottom: 80px; /* Adicionando espaço vazio abaixo da seção de tarefas */
 }
 
 #lista-tarefa-titulo {
