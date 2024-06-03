@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nome da aba -->
+    <title>Daily Tasks</title>
+    <!-- linkando o css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link das fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <img src="./imagens/listinha icon.png" alt="icone listinha">
+        <h1>Daily Tasks</h1>
+        <img src="./imagens/listinha icon.png" alt="icone listinha">
+    </header>
+    <!-- Lista de tarefas -->
+    <section>
+        <div class="container">
+            <div id="nova_tarefa">
+                <div id="adicionar-tarefa-titulo">
+                    <img src="./imagens/tarefa icon.png" alt="icone tarefa">
+                    <h2>Adicionar Tarefa</h2>
+                </div>
+                <form id="inclusão-tarefa">
+                    <ul>
+                        <li>
+                            <label for="nome-tarefa">Tarefa:</label>
+                            <input type="text" id="nome-tarefa" required>
+                        </li>
+                        <li>
+                            <label for="inicio-tarefa">Data inicial:</label>
+                            <input type="date" id="inicio-tarefa" required/>
+                        
+                        </li>
+                        <li>
+                            <label for="fim-tarefa">Data Final:</label>
+                            <input type="date" id="fim-tarefa" required />
+                        </li>
+                        <li>
+                            <textarea id="detalhes-tarefa" placeholder="Detalhes da tarefa (Opcional)" rows="2"></textarea>
+                        </li>
+                        <li id="btns-qtarefas">
+                            <div>
+                                <img id="btn-enviar" src="./imagens/adicionar btn.png" alt="botão adicionar">
+                            </div>
+                            <div id="qtdTarefas">
+                                <span>Voce tem <b>0</b> tarefas!</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Sessão onde ficará as tarefas -->
+    <section id="acompanhando">
+        <div id="lista-tarefa-titulo">
+            <img src="./imagens/task.png" alt="icone tarefas">
+            <h3>Tarefas a fazer:</h3>
+        </div>
+        <div id="lista-tarefas">
+
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Desenvolvido por Luiz Felipe durante o curso Desenvolvedor EBAC - 2024</p>
+    </footer>
+    
+</body>
+</html>
